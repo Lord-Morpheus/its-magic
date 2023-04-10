@@ -1,0 +1,94 @@
+extends base.pug
+
+block scripts 
+    script(src='/static/index.js')
+
+block style 
+    style 
+        include ../static/magic.css
+    
+block content
+    nav#navbar 
+      //- # means id and . means class 
+      ul 
+        div#logo 
+          img(src="/static/icons/logo.jpg")
+        
+        li #[a(href="/") Home]
+        li #[a(href="/") About]
+        li #[a(href="/magicians") Magician info]
+        li #[a(href="/contact") Contact us]
+
+    div#characters
+      div.cards
+        h2 Madara Uchiha
+        div.card-box
+          div.card-img
+            img(src="/static/icons/madara-uchiha.jpg")
+          p "Wake up to reality. Nothing ever goes as planned in this world. The longer you live, the more you realize that only pain, suffering, and futility exist in this reality."
+      div.cards
+        h2 Edward Elric
+        div.card-box
+          div.card-img
+            img(src="/static/icons/edward-elric.png")
+          p "A lesson without pain is meaningless. That's because no one can gain without sacrificing something. But by enduring that pain and overcoming it, he shall obtain a powerful, unmatched heart... A Fullmetal Heart."
+      div.cards
+        h2 Roy Mustang
+        div.card-box
+          div.card-img
+            img(src="/static/icons/roy-mustang.jpg")
+          p "Nothing's perfect, the world's not perfect, but it's there for us, trying the best it can. That's what makes it so damn beautiful."
+      div.cards
+        h2 Dr Strange
+        div.card-box
+          div.card-img
+            img(src="/static/icons/dr-strange.jpg")
+          p "Just Because Someone Stumbles And Loses Their Way Doesn't Mean They Are Lost Forever"
+      div.cards
+        h2 John Constantine
+        div.card-box
+          div.card-img
+            img(src="/static/icons/john-constantine.jpg")
+          p "The Devil used to be an angel. That's why he's called 'The First of the Fallen'. You come and ask a holy type and they'll tell you the soul is the purest expression of God's love. The spark of creation. Every time the First takes a soul, he's exacting revenge, paying back the Almighty for casting him out."
+      div.cards
+        h2 Pain("Nagato")
+        div.card-box
+          div.card-img
+            img(src="/static/icons/pain.jpg")
+          p "Love is the reason why there is pain. When we lose someone precious to us, hate is born. Vengeance is the product of that hate and so death follows."
+      div.cards
+        h2 Itachi Uchiha
+        div.card-box
+          div.card-img
+            img(src="/static/icons/itachi-uchiha.jpg")
+          p “...people live their lives bound by what they accept as correct and true... that is how they define reality. But what does it mean to be correct or true? Merely vague concepts... their reality may all be an illusion.”
+      div.cards
+        h2 Voldemort
+        div.card-box
+          div.card-img
+            img(src="/static/icons/Voldemort.jpg")
+          p “But nothing I have seen in the world has supported your pronouncements that love is more powerful than my kind of magic, Greatness inspires envy, envy engenders spite, spite spawns lies.” 
+      div.cards
+        h2 Rimuru Tempest
+        div.card-box
+          div.card-img
+            img(src="/static/icons/Rimuru Tempest.jpg")
+          p “If it looks like I stand no chance I'll run away and think up a new plan, but otherwise, I should see how strong it is with my own eyes, right?”
+      div.cards
+        h2 Jiraiya
+        div.card-box
+          div.card-img
+            img(src="/static/icons/jiraiya.jpg")
+          p “The true measure of a shinobi is not how he lives but how hw dies. It's not what they do in life but what they did before dying that proves their worth.”
+      div.cards
+        h2 Sun Jinwoo
+        div.card-box
+          div.card-img
+            img(src="/static/icons/solo-leveling.webp")
+          p "I am the record of your struggles, the evidence of your resistance, and the reward of your sufferings. I am death, I am eternal rest, and I am also terror."
+      div.cards
+        h2 Greed
+        div.card-box
+          div.card-img
+            img(src="/static/icons/greed.jpg")
+          p "Greed may not be good, but it's not so bad either. You humans think greed is just for money and power, but everyone wants something they don't have."

@@ -1,0 +1,56 @@
+//- index.pug
+doctype html
+html
+  head
+    style
+      include ../static/style.css 
+      //- ../is to get out of every folder and then get inside static folder
+  body
+    nav#navbar 
+      //- # means id and . means class 
+      ul 
+        div#logo 
+          img(src="/static/logo.jpg")
+        
+        li #[a(href="/") Home]
+        li #[a(href="/") About]
+        li #[a(href="/") Service]
+        li #[a(href="/") Magician info]
+        li #[a(href="/") Contact us]
+      
+    section#introSection
+      
+        div#first Welcome to the wizarding world
+        div#second Expelliarmus
+
+    section#sponsorSection 
+        h2 The wizards 
+        div.cards
+          h3 Marvel
+          div.card-box
+            div.card-img
+              img(src="/static/marvel.jpg")
+            p this is marvel universe
+        div.cards
+          h3 DC
+          div.card-box
+            div.card-img
+              img(src="/static/DC.jpg")
+            p this is DC universe
+        div.cards
+          h3 Pop culture
+          div.card-box
+            div.card-img
+              img(src="/static/gandalf_the_grey.jpg")
+            p these are famous socerror
+        div.cards
+          h3 anime
+          div.card-box
+            div.card-img
+              img(src="/static/gojo satoru.jpg")
+            p this is anime universe
+
+    footer#footer 
+        | Copyright © 2023 Tarun Srivastava | All rights reserved
+    script
+      include ../static/index.js

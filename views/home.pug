@@ -1,0 +1,52 @@
+extends base.pug
+
+block scripts 
+    script(src='/static/index.js')
+
+block style 
+    style 
+        include ../static/style.css
+
+block content
+    nav#navbar 
+      //- # means id and . means class 
+      ul 
+        div#logo 
+          img(src="/static/icons/logo.jpg")
+        
+        li #[a(href="/") Home]
+        li #[a(href="/") About]
+        li #[a(href="/magicians") Magician info]
+        li #[a(href="/contact") Contact us]
+      
+    section#introSection
+      
+        div#first Welcome to the wizarding world
+        div#second Expelliarmus
+
+    section#sponsorSection 
+        h2 The wizards 
+        div.cards
+          h3 #[a(href="/magicians") Marvel]
+          div.card-box
+            div.card-img
+              img(src="/static/icons/marvel.jpg")
+            p "I have seen everything that has ever happened. Ever will happen. Ever could happen."
+        div.cards
+          h3 #[a(href="/magicians") DC]
+          div.card-box
+            div.card-img
+              img(src="/static/icons/DC.jpg")
+            p "The world doesn't always need a white knight. Sometimes it needs something darker."
+        div.cards
+          h3 #[a(href="/magicians") Pop culture]
+          div.card-box
+            div.card-img
+              img(src="/static/icons/gandalf_the_grey.jpg")
+            p “He that breaks a thing to find out what it is has left the path of wisdom.”
+        div.cards
+          h3 #[a(href="/magicians") Anime]
+          div.card-box
+            div.card-img
+              img(src="/static/icons/gojo satoru.jpg")
+            p "Dying To Win and Risking Death To Win Are Completely Different"

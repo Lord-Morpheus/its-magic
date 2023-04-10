@@ -1,0 +1,35 @@
+extends base.pug
+
+block scripts 
+    script(src='/static/index.js')
+
+block style 
+    style 
+        include ../static/info.css
+
+block content 
+    nav#navbar 
+      //- # means id and . means class 
+      ul 
+        div#logo 
+          img(src="/static/icons/logo.jpg")
+        
+        li #[a(href="/") Home]
+        li #[a(href="/") About]
+        li #[a(href="/magicians") Magician info]
+        li #[a(href="/contact") Contact us]
+
+    h1 Contact Us 
+    form(action="/contact", method="post")
+
+        input(type="text", class="myInput",name="name",placeholder="enter your name")
+        input(type="phone", class="myInput",name="phone",placeholder="enter your phone no.")
+        input(type="email", class="myInput",name="email",placeholder="enter your email id")
+        input(type="text", class="myInput",name="query",placeholder="enter your query")
+
+        button(class="btn")
+            p#img1
+                img(src="/static/icons/rinnegan.png")
+            |Submit 
+            p#img2
+                img(src="/static/icons/rinnegan.png")
